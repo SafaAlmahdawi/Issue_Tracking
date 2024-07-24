@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You for Submitting Your Issue</title>
+</head>
+<body>
+    <h1>Thank You for Submitting Your Issue</h1>
+    <p>Your unique issue ID is: <span id="issueId"></span></p>
+
+    <script>
+        // Get the query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const issueId = urlParams.get('issueId');
+
+        // Display the issue ID
+        document.getElementById('issueId').textContent = issueId;
+    </script>
+</body>
+</html>
